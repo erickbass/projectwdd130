@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Exo+2:ital,wght@1,700&family=Figtree&display=swap');
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #FDFCDC;
+  }
+  
+  nav {
+    background-color: #0081A7;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #FDFCDC;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #00AFB9;
+    color: #FDFCDC;
+    padding: 50px;
+  }
+  .welcome{
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .destacado {
+    text-align: center;
+    margin: 50px auto;
+  }
+  .aboutus {
+    text-align: left;
+    margin: 50px auto;
+  }
+  
+  .destacado img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .lista-productos {
+    margin: 50px auto;
+  }
+  
+  .lista-productos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .lista-productos ul li {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .lista-productos ul li img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #0081A7;
+    color: #FDFCDC;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00AFB9;
+  }
+  
