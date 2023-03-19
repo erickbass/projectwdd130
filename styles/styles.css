@@ -26,6 +26,18 @@ body {
     text-decoration: none;
     font-size: 18px;
   }
+  .brand{
+    margin-left: 5%;
+    line-height: 80px;
+  }
+  .brand a{
+    color: white;
+    font-size: 30px;
+  }
+  .brand img{
+    width: 150px;
+    height: 150px;
+  }
   
   header {
     text-align: center;
