@@ -1,31 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Exo+2:ital,wght@1,700&family=Figtree&display=swap');
 
+#content{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  display: grid;
+  grid-template-columns: 160px auto;
+  background-color:#00B4D8;
+} 
+.logo{
+  width: 150px;
+}
+#logo-link{
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+nav a{
+  text-align: center;
+  color: azure;
+  text-decoration: none;
+  font-family: 'Figtree', sans-serif;
+  font-size: 25px;
+  padding: 35px;
+}
 body {
     font-family: 'Figtree', sans-serif;
     background-color: #FDFCDC;
   }
+  .container{
+    display: flex;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2px 0;
+    height: auto;
   
+	  flex-wrap: wrap;
+	  justify-content: auto;
+	  align-items: auto;
+}
+
+.container h2{
+  font-size: 30px;
+}
+.container p{
+  font-size: 20px;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+
+} 
+.button-box{
+  text-align: center;
+}
+
+.join, .book {
+  background-color: #00B4D8;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.book:hover{
+  background-color: aqua;
+}
+.image-container {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+.image-container img {
+	max-width: 100%;
+	height: 300px ;
+  width: 300px;
+	flex: 1;
+	margin-right: 20px;
+  border-radius: 10px;
+}
+.image-container2 {
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+.image-container2 img {
+  display: block;
+	max-width: 100%;
+	height: auto;
+  border-radius: 10px;
+}
+.image-container2 h2 p {
+  display: flex;
+  align-items: center;
+}
+
+.image-container3 {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+.image-container3 img {
+	max-width: 100%;
+	height: 400px ;
+  width: 550px;
+	flex: 1;
+	margin-right: 15px;
+  border-radius: 10px;
+}
+.our {
+  text-align: center;
+}
+
+
+footer{
+  background-color: #00B4D8;
+  font-family: 'Poppins', sans-serif;
+  padding: 25px 50px;
+  margin-top: 200px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: azure;
+  text-decoration: none;
+}
+footer h3 {
+  color: azure;
+}
+footer p{
+  font-size: 1.2em;
+}
+footer a:hover{
+  color: aqua;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
   nav {
     background-color: #0081A7;
     padding: 20px;
   }
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #FDFCDC;
-    text-decoration: none;
-    font-size: 18px;
-  }
   .brand{
     margin-left: 5%;
     line-height: 80px;
@@ -62,6 +218,10 @@ body {
     text-align: left;
     margin: 50px auto;
   }
+  .aboutus h1 {
+    text-align: center;
+    margin: 50px auto;
+  }
   
   .destacado img {
     width: 100%;
@@ -73,7 +233,12 @@ body {
   .lista-productos {
     margin: 50px auto;
   }
-  
+
+  .lista-productos h2{
+    margin: 25px 200px;
+    font-size: 35px;
+  }
+
   .lista-productos ul {
     list-style: none;
     margin: 0;
@@ -84,9 +249,17 @@ body {
   }
   
   .lista-productos ul li {
-    width: 300px;
+    width: 350px;
     margin: 20px;
     text-align: center;
+    font-size: 18px;
+  }
+
+  .lista-productos ul li h2{
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
   }
   
   .lista-productos ul li img {
@@ -94,6 +267,7 @@ body {
     max-width: 250px;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
   }
   
   button {
@@ -108,4 +282,43 @@ body {
   button:hover {
     background-color: #00AFB9;
   }
-  
+   /* Formulario */
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
